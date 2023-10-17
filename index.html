@@ -22,14 +22,222 @@
 
     <!-- CSS STYLES -->
 
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <!-- PRE-LOAD IMAGES -->
+
+    <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+    <link rel="preload" as="image" href="./assets/images/preloader.svg">
 
     <title>Travelia - Explore the world</title>
 </head>
 <body>
     
+    <!-- PRE-LOADER -->
+
+    <div class="preloader" data-preloader>
+        <div class="preloader__inner">
+            <img 
+                src="./assets/images/preloader.svg" 
+                alt="preloader" 
+                width="50"
+                height="50"
+                class="preloader__image"
+            >
+        </div>
+    </div>
+
+    <!-- 01. HEADER -->
+
+    <!-- <header class="header" data-header>
+        <div class="container">
+            <a href="/" class="logo">
+                <img src="./assets/images/logo.svg" alt="Travelia-Logo" width="187" height="38">
+            </a>
+        </div>
+    </header> -->
+
+    <!-- 02. MAIN CONTENT -->
+
+    <main>
+
+        <article>
+
+            <!-- 02.01. HERO SECTION -->
+
+            <section 
+                class="section hero has__bg_image" 
+                aria-label="hero"
+            >
+                <div class="container">
+
+                    <div class="hero__content">
+
+                        <h4 class="hero__subtitle">
+                            Explore the World 
+                            <img 
+                                src="./assets/images/title-icon.svg" 
+                                alt="world icon" 
+                                width="20"
+                                height="20"
+                                class="image"
+                            >
+                        </h4>
+
+                        <h1 class="title title__h1 hero__title">
+                            It’s a Big World Out There, Go Explore
+                        </h1>
+
+                        <p class="hero__desc">
+                            We always make our customer happy 
+                            by providing as many choices as possible
+                        </p>
+
+                        <div class="wrapper">
+
+                            <a href="#" class="btn btn__secondary">
+                                <span class="span">Plan a Trip</span>
+
+                                <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+                            </a>
+
+                            <button type="button" class="hero__btn">
+
+                                <div class="btn__image">
+                                    <img 
+                                        src="./assets/images/hero-button-img.jpg" 
+                                        alt="our story" 
+                                        width="100"
+                                        height="100"
+                                        class="image__cover"
+                                    >
+
+                                    <ion-icon name="play" aria-hidden="true"></ion-icon>
+                                </div>
+
+                                <p class="desc">Watch our Story</p>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <figure class="hero__banner">
+                        <img 
+                            src="./assets/images/hero-banner.png" 
+                            alt="hero banner" 
+                            width="631"
+                            height="735"
+                            class="w__100"
+                        >
+                    </figure>
+
+                </div>
+            </section>
+
+            <!-- 02.02. SERVICE SECTION -->
+
+            <section 
+                class="section service" 
+                aria-label="service"
+            >
+
+                <div class="container">
+
+                    <div class="title__wrapper">
+
+                        <h4 class="section__subtitle">
+                            What We Serve
+                        </h4>
+
+                        <h2 class="title__h2 title section__title">
+                            Top Values For You
+                        </h2>
+
+                        <p class="section__desc">
+                            Try a variety of benefits 
+                            when using our services.
+                        </p>
+
+                    </div>
+
+                    <div class="service__card">
+
+                        <div class="card__icon">
+                            <img 
+                                src="./assets/images/service-icon-1.svg" 
+                                width="60"
+                                height="60"
+                                loading="lazy"
+                                alt="icon"
+                            >
+                        </div>
+
+                        <h3 class="title__h3 title card__title">
+                            Lot Of Choices
+                        </h3>
+
+                        <p class="card__desc">
+                            Total 460+ destinations that we work with.
+                        </p>
+
+                    </div>
 
 
+                    <div class="service__card">
+
+                        <div class="card__icon">
+                            <img 
+                                src="./assets/images/service-icon-2.svg" 
+                                width="60"
+                                height="60"
+                                loading="lazy"
+                                alt="icon"
+                            >
+                        </div>
+
+                        <h3 class="title__h3 title card__title">
+                            Best Tour Guide
+                        </h3>
+
+                        <p class="card__desc">
+                            Our tour guide with 15+ years of experience.
+                        </p>
+
+                    </div>
+
+
+                    <div class="service__card">
+
+                        <div class="card__icon">
+                            <img 
+                                src="./assets/images/service-icon-3.svg" 
+                                width="60"
+                                height="60"
+                                loading="lazy"
+                                alt="icon"
+                            >
+                        </div>
+
+                        <h3 class="title__h3 title card__title">
+                            Easy Booking
+                        </h3>
+
+                        <p class="card__desc">
+                            With an easy and fast ticket purchase process.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </article>
+
+    </main>
+    
     <!-- CUSTOM JAVASCRIPT FEATURES -->
 
     <script src="./assets/js/script.js"></script>

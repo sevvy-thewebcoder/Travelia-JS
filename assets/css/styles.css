@@ -1,0 +1,170 @@
+/* IMPORT CSS MODULES */
+
+@import url('./variables.css');
+@import url('./resetDefaults.css');
+@import url('./reusables.css');
+
+/* PRE-LOADER */
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+    z-index: 6;
+    transition: var(--transition-1);
+    background-color: var(--bg-lavender-blush);
+}
+
+.preloader.remove {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.preloader__inner {
+    position: relative;
+}
+
+.preloader__inner::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 80%;
+    height: 10px;
+    transform: translateX(-50%);
+    background-color: var(--bg-black-alpha-20);
+    filter: blur(4px);
+    z-index: -1;
+    animation: dropShadow 800ms ease-in-out infinite alternate;
+}
+
+.preloader .preloader__image {
+    animation: bounce 800ms ease-in-out infinite alternate;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes dropShadow {
+    0% { width: 40%; }
+    100% { width: 80%; }
+}
+
+/* 01. HEADER */
+
+
+
+
+/* 02. MAIN CONTENT */
+
+/* 02.01. HERO SECTION */
+
+.hero {
+    padding-block-start: 150px;
+}
+
+.hero.has__bg_image {
+    background-image: url('/assets/images/hero-bg.jpg');
+}
+
+.hero .container {
+    display: grid;
+    gap: 50px;
+}
+
+.hero__subtitle {
+    max-width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 20px;
+    font-size: var(--fontSize-7);
+    color: var(--text-light-coral);
+    background-color: var(--bg-misty-rose);
+    border-radius: var(--radius-05);
+}
+
+.hero__title {
+    margin-block: 20px;
+}
+
+.hero__desc {
+    margin-block-end: 30px;
+}
+
+.hero .btn__secondary {
+    margin-block-end: 20px;
+}
+
+.hero__btn {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: var(--text-gunmetal);
+    font-weight: var(--weight-medium);
+    transition: var(--transition-1);
+}
+
+.hero__btn .btn__image {
+    position: relative;
+    width: 60px;
+    height: 60px;   
+    box-shadow: var(--shadow-1);
+    border-radius: var(--radius-circle);
+    background-color: var(--bg-gainsboro);
+}
+
+.hero__btn .image__cover {
+    border-radius: inherit;
+}
+
+.hero__btn ion-icon {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    padding: 10px;
+    transform: translate(50%, -50%);
+    background-color: var(--bg-white);
+    border-radius: var(--radius-circle);
+    box-shadow: var(--shadow-1);
+}
+
+.hero__btn:is(:hover, :focus-visible) {
+    color: var(--text-majorelle-blue);
+}
+
+/* 02.02. SERVICE SECTION */
+
+.service .container {
+    display: grid;
+    gap: 25px;
+}
+
+.service__card:nth-child(2) {
+    background-color: var(--bg-chrome-yellow-alpha-5);
+}
+
+.service__card:nth-child(3) {
+    background-color: var(--bg-red-salsa-alpha-5);
+}
+
+.service__card:nth-child(4) {
+    background-color: var(--bg-majorelle-blue-alpha-5);
+}
+
+.service__card {
+    padding: 25px 20px;
+    border-radius: var(--radius-05);
+}
+
+.service__card .card__title {
+    margin-block: 10px 5px;
+}
+
+/* 02.03. DESTINATION SECTION */
