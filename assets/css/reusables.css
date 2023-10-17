@@ -94,3 +94,9 @@
 .section__title {
     margin-block: 10px;
 }
+
+.image__holder {
+    aspect-ratio: var(--width) / var(--height);
+    overflow: hidden;
+    background-color: var(--bg-gainsboro);
+}

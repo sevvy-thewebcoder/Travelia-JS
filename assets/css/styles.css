@@ -168,3 +168,69 @@
 }
 
 /* 02.03. DESTINATION SECTION */
+
+.destination .section__title {
+    margin-block-end: 40px;
+}
+
+.destination__list {
+    display: grid;
+    gap: 30px;
+}
+
+.destination__card .card__banner {
+    position: relative;
+    border-radius: var(--radius-05);
+}
+
+.destination__card:is(:hover, :focus-within) .image__cover {
+    transform: scale(1.05);
+}
+
+.destination__card .card__price {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.8rem;
+    line-height: 1.45;
+    font-weight: var(--weight-bold);
+    background-color: var(--bg-white);
+    color: var(--bg-majorelle-blue);
+    padding: 5px 15px;
+    border-radius: var(--radius-05);
+}
+
+.destination__card .card__title {
+    margin-block: 15px 5px;
+    transition: var(--transition-1);
+}
+
+.destination__card .card__title:is(:hover, :focus-visible) {
+    color: var(--text-majorelle-blue);
+}
+
+.destination__card :is(.card__rating, .span) {
+    display: flex;
+    align-items: center;
+}
+
+.destination__card .card__rating {
+    margin-block-start: 10px;
+    gap: 10px;
+}
+
+.destination__card .card__rating .span {
+    background-color: var(--bg-sunglow-alpha-10);
+    gap: 5px;
+    padding: 4px 12px;
+    border-radius: var(--radius-05);
+}
+
+.destination__card .card__rating ion-icon {
+    color: var(--text-sunglow);
+}
+
+.destination .btn {
+    margin-inline: auto;
+    margin-block-start: 40px;
+}
