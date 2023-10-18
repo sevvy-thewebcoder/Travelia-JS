@@ -36,23 +36,62 @@
     
     /* 02. Typography */
     
-    --ff-poppins: 'Poppins', sans-serif;
+    --ff-IBM-Plex-Sans: 'IBM Plex Sans', sans-serif;
     
-    --fontSize-1: 4.2rem;
-    --fontSize-2: 3.6rem;
-    --fontSize-3: 2.5rem;
-    --fontSize-4: 2.4rem;
-    --fontSize-5: 2rem;
-    --fontSize-6: 1.6rem;
-    --fontSize-7: 1.5rem;
+    /* --fontSize-1: 4.2rem; */
+    --fontSize-1: 4.200rem;
+    --fontSize-2: 3.200rem;
+    --fontSize-3: 2.500rem;
+    --fontSize-4: 2.400rem;
+    --fontSize-5: 2.000rem;
+    --fontSize-6: 1.600rem;
+    --fontSize-7: 1.500rem;
     
     --weight-bold: 700;
     --weight-semiBold: 600;
     --weight-medium: 500;
     
     /* 03. Spacing */
+
+    /* 03.01. Universal */
     
-    --section-spacing: 80px;
+    --section-spacing: 8.000rem;
+
+    /* 03.02. Gap */
+
+    --gap-0h: 0.500rem;
+    --gap-01: 1.000rem;
+    --gap-1h: 1.500rem;
+    --gap-02: 2.000rem;
+    --gap-03: 3.000rem;
+    --gap-04: 4.000rem;
+    --gap-05: 5.000rem;
+
+    /* 03.03. Padding */
+
+    --pd-0h: 0.500rem;
+    --pd-01: 1.000rem;
+    --pd-1h: 1.500rem;
+    --pd-02: 2.000rem;
+    --pd-2h: 2.500rem;
+    --pd-03: 3.000rem;
+    --pd-04: 4.000rem;
+    --pd-05: 5.000rem;
+    --pd-inline-container: 1.600rem;
+    --pd-block-start-hero-section: 15.000rem;
+    --pd-block-hero-subtitle: 0.800rem 2.000rem;
+    --pd-custom-service-card: var(--pd-2h) var(--pd-02);
+    --pd-custom-destination-card: var(--pd-0h) var(--pd-1h);
+
+    /* 03.04. Margin */
+
+    --mg-01: 1.000rem;
+    --mg-02: 2.000rem;
+    --mg-03: 3.000rem;
+    --mg-04: 4.000rem;
+    --mg-05: 5.000rem;
+    --mg-auto: auto;
+    --mg-inline-auto: auto;
     
     /* 04. Shadow */
     
@@ -68,7 +107,7 @@
     --radius-30: 30px;
     --radius-20: 20px;
     --radius-10: 10px;
-    --radius-05: 05px;
+    --radius-05: 10px;
     
     /* 06. Transition */
     

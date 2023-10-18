@@ -5,7 +5,7 @@
 *::after {
     margin: 0;
     padding: 0;
-    /* border: 1px solid; */
+    /* border: 0.2px solid; */
     box-sizing: border-box;
 }
 
@@ -15,15 +15,21 @@ h3,
 h4, 
 h5, 
 h6, 
-p, 
+p {
+    width: 100%;
+}
+
 a, 
 li,
 input, 
 button {
     all: unset;
     display: block;
+    width: 100%;
     font: inherit;
 }
+
+
 
 img {
     height: auto;
@@ -48,7 +54,7 @@ address {
 }
 
 html {
-    font-family: var(--ff-poppins);
+    font-family: var(--ff-IBM-Plex-Sans);
     font-size: 10px;
     scroll-behavior: smooth;
 }

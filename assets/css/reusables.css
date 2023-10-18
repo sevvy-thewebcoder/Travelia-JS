@@ -5,19 +5,49 @@
 /* REUSABLE CSS STYLES */
 
 .container {
-    padding-inline: 16px;
+    padding-inline: var(--pd-inline-container);
+}
+
+.container__grid {
+    display: grid;
+    gap: var(--gap-05);
+}
+
+.card__wrapper_grid {
+    display: grid;
+    gap: var(--gap-04);
+}
+
+.content__grid {
+    display: grid;
+    gap: var(--gap-03);
+}
+
+.gallery__grid {
+    display: grid;
+    gap: var(--gap-02);
+}
+
+.section__title_grid {
+    display: grid;
+    gap: var(--gap-01);
+}
+
+.card__content_grid {
+    display: grid;
+    gap: var(--gap-01);
 }
 
 .btn {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: var(--gap-01);
     max-width: max-content;
     height: 40px;
     color: var(--text-white);
-    padding-inline: 30px;
-    border-radius: var(--radius-05);
+    padding-inline: var(--pd-03);
+    border-radius: var(--radius-10);
     transition: var(--transition-1);
 }
 
@@ -57,13 +87,14 @@
 
 .title__h1 {
     font-size: var(--fontSize-1);
+    font-weight: var(--weight-bold);
     line-height: 1.2;
-    word-spacing: 15px;
-    /* text-align: justify; */
+    word-spacing: clamp(10px, 15vw, 25px);
 }
 
 .title__h2 {
     font-size: var(--fontSize-2);
+    word-spacing: clamp(05px, 5vw, 8px);
 }
 
 .title__h3 {
@@ -91,12 +122,12 @@
     text-transform: uppercase;
 }
 
-.section__title {
+/* .section__title {
     margin-block: 10px;
-}
+} */
 
 .image__holder {
     aspect-ratio: var(--width) / var(--height);
-    overflow: hidden;
     background-color: var(--bg-gainsboro);
+    overflow: hidden;
 }

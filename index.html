@@ -18,7 +18,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- CSS STYLES -->
 
@@ -69,9 +69,9 @@
                 class="section hero has__bg_image" 
                 aria-label="hero"
             >
-                <div class="container">
+                <div class="container container__grid">
 
-                    <div class="hero__content">
+                    <div class="hero__content content__grid">
 
                         <h4 class="hero__subtitle">
                             Explore the World 
@@ -143,9 +143,9 @@
                 aria-label="service"
             >
 
-                <div class="container">
+                <div class="container content__grid">
 
-                    <div class="title__wrapper">
+                    <div class="title__wrapper section__title_grid">
 
                         <h4 class="section__subtitle">
                             What We Serve
@@ -162,7 +162,7 @@
 
                     </div>
 
-                    <div class="service__card">
+                    <div class="service__card card__content_grid">
 
                         <div class="card__icon">
                             <img 
@@ -185,7 +185,7 @@
                     </div>
 
 
-                    <div class="service__card">
+                    <div class="service__card card__content_grid">
 
                         <div class="card__icon">
                             <img 
@@ -208,7 +208,7 @@
                     </div>
 
 
-                    <div class="service__card">
+                    <div class="service__card card__content_grid">
 
                         <div class="card__icon">
                             <img 
@@ -241,17 +241,22 @@
                 aria-label="destination"
             >
 
-                <div class="container">
+                <div class="container container__grid">
 
-                    <h4 class="section__subtitle">
-                        Top destination
-                    </h4>
+                    <div class="section__title_grid">
 
-                    <h2 class="title__h2 title section__title">
-                        Explore Top Destination
-                    </h2>
+                        <h4 class="section__subtitle">
+                            Top destination
+                        </h4>
+    
+                        <h2 class="title__h2 title section__title">
+                            Explore Top Destination
+                        </h2>
 
-                    <ul class="destination__list">
+                    </div>
+
+
+                    <ul class="destination__list card__wrapper_grid">
 
                         <li>
                             <div class="destination__card">
@@ -582,23 +587,28 @@
                 aria-label="experience"
             >
 
-                <div class="container">
+                <div class="container container__grid">
 
-                    <div class="experience__content">
+                    <div class="experience__content content__grid">
 
-                        <h4 class="section__subtitle">
-                            Our Experience
-                        </h4>
+                        <div class="section__title_grid">
 
-                        <h2 class="title__h2 title section__title">
-                            With Our Experience We Will Serve You
-                        </h2>
+                            <h4 class="section__subtitle">
+                                Our Experience
+                            </h4>
+    
+                            <h2 class="title__h2 title section__title">
+                                With Our Experience We Will Serve You
+                            </h2>
+    
+                            <p class="section__desc">
+                                Since we first opened we have always prioritized 
+                                the convenience of our users by providing 
+                                low prices and with a easy process.
+                            </p>
 
-                        <p class="section__desc">
-                            Since we first opened we have always prioritized 
-                            the convenience of our users by providing 
-                            low prices and with a easy process.
-                        </p>
+                        </div>
+
 
                         <ul class="experience__list">
                             <li class="experience__item">
@@ -635,7 +645,7 @@
 
                         
                     </div>
-                    
+
                     <figure class="experience__banner">
 
                         <img 
@@ -657,6 +667,190 @@
                         >
 
                     </figure>
+
+                </div>
+
+            </section>
+
+            <!-- 02.05. GALLERY SECTION -->
+
+            <section 
+                class="section gallery"
+                aria-label="gallery"
+            >
+
+                <div class="container container__grid">
+
+                    <div class="section__title_grid">
+
+                        <h4 class="section__subtitle">
+                            Photo Gallery
+                        </h4>
+    
+                        <h2 class="title__h2 title section__title">
+                            Photo’s From Travelers
+                        </h2>
+
+                    </div>
+
+
+                    <ul class="gallery__list gallery__grid">
+
+                        <li class="gallery__item">
+
+                            <figure 
+                                class="item__banner image__holder"
+                                style="--width: 700; --height: 925;"
+                            >
+                                <img 
+                                    src="./assets/images/gallery-1.jpg" 
+                                    width="700"
+                                    height="925"
+                                    loading="lazy"
+                                    alt="gallery" 
+                                    class="image__cover"
+                                >
+                            </figure>
+
+                        </li>
+
+                        <li class="gallery__item">
+
+                            <figure 
+                                class="item__banner image__holder"
+                                style="--width: 700; --height: 925;"
+                            >
+                                <img 
+                                    src="./assets/images/gallery-2.jpg" 
+                                    width="700"
+                                    height="925"
+                                    loading="lazy"
+                                    alt="gallery" 
+                                    class="image__cover"
+                                >
+                            </figure>
+
+                        </li>
+
+                        <li class="gallery__item">
+
+                            <figure 
+                                class="item__banner image__holder"
+                                style="--width: 700; --height: 840;"
+                            >
+                                <img 
+                                    src="./assets/images/gallery-3.jpg" 
+                                    width="700"
+                                    height="840"
+                                    loading="lazy"
+                                    alt="gallery" 
+                                    class="image__cover"
+                                >
+                            </figure>
+
+                        </li>
+
+                        <li class="gallery__item">
+
+                            <figure 
+                                class="item__banner image__holder"
+                                style="--width: 700; --height: 378;"
+                            >
+                                <img 
+                                    src="./assets/images/gallery-4.jpg" 
+                                    width="700"
+                                    height="378"
+                                    loading="lazy"
+                                    alt="gallery" 
+                                    class="image__cover"
+                                >
+                            </figure>
+
+                        </li>
+
+                        <li class="gallery__item">
+
+                            <figure 
+                                class="item__banner image__holder"
+                                style="--width: 700; --height: 378;"
+                            >
+                                <img 
+                                    src="./assets/images/gallery-5.jpg" 
+                                    width="700"
+                                    height="378"
+                                    loading="lazy"
+                                    alt="gallery" 
+                                    class="image__cover"
+                                >
+                            </figure>
+
+                        </li>
+
+                        <li class="gallery__item">
+
+                            <figure 
+                                class="item__banner image__holder"
+                                style="--width: 700; --height: 378;"
+                            >
+                                <img 
+                                    src="./assets/images/gallery-6.jpg" 
+                                    width="700"
+                                    height="378"
+                                    loading="lazy"
+                                    alt="gallery" 
+                                    class="image__cover"
+                                >
+                            </figure>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </section>
+
+            <!-- 02.06. CTA SECTION -->
+
+            <section 
+                class="section cta"
+                aria-label="call to action"
+            >
+
+                <div class="container">
+
+                    <div 
+                        class="cta__card has__bg_image content__grid"
+                        style="background-image: url('./assets/images/cta-bg.jpg');"
+                    >
+
+                        <div class="section__title_grid">
+
+                            <h2 class="title__h2 title section__title">
+                                Prepare Yourself & Let’s Explore The Beauty Of The World
+    
+                                <img 
+                                    src="./assets/images/title-icon.svg" 
+                                    width="36"
+                                    height="36"
+                                    loading="lazy"
+                                    alt="icon" 
+                                    class="image"
+                                >
+                            </h2>
+    
+                            <p class="section__desc">
+                                We have many special offers especially for you.
+                            </p>
+
+                        </div>
+
+
+                        <a href="#" class="btn btn__primary">
+                            Get Started
+                        </a>
+
+                    </div>
 
                 </div>
 

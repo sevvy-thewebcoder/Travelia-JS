@@ -66,46 +66,34 @@
 /* 02.01. HERO SECTION */
 
 .hero {
-    padding-block-start: 150px;
+    padding-block-start: var(--pd-block-start-hero-section);
 }
 
 .hero.has__bg_image {
     background-image: url('/assets/images/hero-bg.jpg');
 }
 
-.hero .container {
-    display: grid;
-    gap: 50px;
-}
-
 .hero__subtitle {
-    max-width: max-content;
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 8px 20px;
+    gap: var(--gap-01);
+    max-width: max-content;
     font-size: var(--fontSize-7);
     color: var(--text-light-coral);
+    padding: var(--pd-block-hero-subtitle);
     background-color: var(--bg-misty-rose);
-    border-radius: var(--radius-05);
+    border-radius: var(--radius-10);
 }
 
-.hero__title {
-    margin-block: 20px;
-}
-
-.hero__desc {
-    margin-block-end: 30px;
-}
-
-.hero .btn__secondary {
-    margin-block-end: 20px;
+.hero .wrapper {
+    display: grid;
+    gap: var(--gap-04);
 }
 
 .hero__btn {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: var(--gap-03);
     color: var(--text-gunmetal);
     font-weight: var(--weight-medium);
     transition: var(--transition-1);
@@ -128,7 +116,7 @@
     position: absolute;
     top: 50%;
     right: 0;
-    padding: 10px;
+    padding: var(--pd-01);
     transform: translate(50%, -50%);
     background-color: var(--bg-white);
     border-radius: var(--radius-circle);
@@ -139,12 +127,9 @@
     color: var(--text-majorelle-blue);
 }
 
+
 /* 02.02. SERVICE SECTION */
 
-.service .container {
-    display: grid;
-    gap: 25px;
-}
 
 .service__card:nth-child(2) {
     background-color: var(--bg-chrome-yellow-alpha-5);
@@ -159,28 +144,23 @@
 }
 
 .service__card {
-    padding: 25px 20px;
-    border-radius: var(--radius-05);
+    padding: var(--pd-custom-service-card);
+    border-radius: var(--radius-10);
 }
 
-.service__card .card__title {
-    margin-block: 10px 5px;
-}
 
 /* 02.03. DESTINATION SECTION */
 
-.destination .section__title {
-    margin-block-end: 40px;
-}
-
-.destination__list {
+.destination__card {
+    
     display: grid;
-    gap: 30px;
+    gap: var(--gap-1h);
 }
 
 .destination__card .card__banner {
     position: relative;
-    border-radius: var(--radius-05);
+    border-radius: var(--radius-10);
+
 }
 
 .destination__card:is(:hover, :focus-within) .image__cover {
@@ -196,12 +176,16 @@
     font-weight: var(--weight-bold);
     background-color: var(--bg-white);
     color: var(--bg-majorelle-blue);
-    padding: 5px 15px;
-    border-radius: var(--radius-05);
+    padding: var(--pd-custom-destination-card);
+    border-radius: var(--radius-10);
+}
+
+.destination .card__content {
+    display: grid;
+    gap: var(--gap-01);
 }
 
 .destination__card .card__title {
-    margin-block: 15px 5px;
     transition: var(--transition-1);
 }
 
@@ -215,47 +199,36 @@
 }
 
 .destination__card .card__rating {
-    margin-block-start: 10px;
-    gap: 10px;
+    gap: var(--gap-01);
 }
 
 .destination__card .card__rating .span {
     background-color: var(--bg-sunglow-alpha-10);
     gap: 5px;
     padding: 4px 12px;
-    border-radius: var(--radius-05);
+    border-radius: var(--radius-10);
 }
 
 .destination__card .card__rating ion-icon {
     color: var(--text-sunglow);
 }
 
-.destination .btn {
-    margin-inline: auto;
-    margin-block-start: 40px;
-}
-
 
 /* 02.04. EXPERIENCE SECTION */
-
-.experience .container {
-    display: grid;
-    gap: 50px;
-}
 
 .experience__banner {
     position: relative;
 }
 
-.experience .section__desc {
-    margin-block-end: 20px;
+.experience__list {
+    display: grid;
+    gap: var(--gap-1h);
 }
 
 .experience__item {
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-block-start: 15px;
+    gap: var(--gap-01);
 }
 
 .experience__item .item__title {
@@ -271,3 +244,24 @@
     width: 25%;
     filter: drop-shadow(var(--shadow-4));
 }
+
+
+/* 02.05. GALLERY SECTION */
+
+.gallery .item__banner {
+    border-radius: var(--radius-10);
+}
+
+
+/* 02.06. CTA SECTION */
+
+.cta__card {
+    padding: 60px 20px;
+    background-color: var(--bg-misty-rose);
+    border-radius: var(--radius-10);
+}
+
+.cta .section__title .image {
+    display: inline-block;
+}
+
