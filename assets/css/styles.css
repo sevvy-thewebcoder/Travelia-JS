@@ -234,3 +234,40 @@
     margin-inline: auto;
     margin-block-start: 40px;
 }
+
+
+/* 02.04. EXPERIENCE SECTION */
+
+.experience .container {
+    display: grid;
+    gap: 50px;
+}
+
+.experience__banner {
+    position: relative;
+}
+
+.experience .section__desc {
+    margin-block-end: 20px;
+}
+
+.experience__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-block-start: 15px;
+}
+
+.experience__item .item__title {
+    font-size: 3.6rem;
+    font-weight: var(--weight-bold);
+    color: var(--text-majorelle-blue);
+}
+
+.experience__shape {
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    width: 25%;
+    filter: drop-shadow(var(--shadow-4));
+}
