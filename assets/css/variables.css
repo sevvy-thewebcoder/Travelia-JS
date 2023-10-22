@@ -12,12 +12,15 @@
     --bg-majorelle-blue: hsl(249, 95%, 63%);
     --bg-ocean-blue: hsl(249, 63%, 54%);
     --bg-majorelle-blue-alpha-5: hsla(249, 95%, 63%, 0.05);
+    --bg-majorelle-blue-alpha-10: hsla(249, 95%, 63%, 0.1);
     --bg-misty-rose: hsl(0, 100%, 95%);
     --bg-red-salsa: hsl(357, 94%, 63%);
     --bg-red-salsa-alpha-5: hsla(357, 94%, 63%, 0.05);
+    --bg-red-salsa-alpha-10: hsla(357, 94%, 63%, 0.1);
     --bg-english-vermillion: hsl(357, 64%, 53%);
     --bg-chrome-yellow-alpha-5: hsla(40, 100%, 50%, 0.05);
-    --bg-sunglow-alpha-10: hsla(48, 100%, 50%, 0.1);
+    --bg-chrome-yellow-alpha-10: hsla(40, 100%, 50%, 0.1);
+    --bg-sunglow-alpha-10: hsla(48, 100%, 50%, 0.2);
     --bg-gainsboro: hsl(0, 0%, 85%);
     
     
@@ -28,7 +31,7 @@
     --text-light-coral: hsl(357, 96%, 73%);
     --text-granite-gray: hsl(210, 4%, 38%);
     --text-majorelle-blue: hsl(249, 95%, 63%);
-    --text-sunglow: hsl(48, 100%, 50%);
+    --text-sunglow: hsl(48, 100%, 42%);
     
     /* 01.03. Border color */
     
@@ -38,24 +41,20 @@
     
     --ff-IBM-Plex-Sans: 'IBM Plex Sans', sans-serif;
     
-    /* --fontSize-1: 4.2rem; */
     --fontSize-1: 4.200rem;
     --fontSize-2: 3.200rem;
-    --fontSize-3: 2.500rem;
+    --fontSize-3: 2.000rem;
     --fontSize-4: 2.400rem;
     --fontSize-5: 2.000rem;
     --fontSize-6: 1.600rem;
     --fontSize-7: 1.500rem;
+    --fontSize-exp-item-title: 3.600rem;
     
     --weight-bold: 700;
     --weight-semiBold: 600;
     --weight-medium: 500;
     
     /* 03. Spacing */
-
-    /* 03.01. Universal */
-    
-    --section-spacing: 8.000rem;
 
     /* 03.02. Gap */
 
@@ -77,15 +76,12 @@
     --pd-03: 3.000rem;
     --pd-04: 4.000rem;
     --pd-05: 5.000rem;
-    --pd-inline-container: 1.600rem;
-    --pd-block-start-hero-section: 15.000rem;
-    --pd-block-hero-subtitle: 0.800rem 2.000rem;
-    --pd-custom-service-card: var(--pd-2h) var(--pd-02);
-    --pd-custom-destination-card: var(--pd-0h) var(--pd-1h);
+    --pd-06: 6.000rem;
 
     /* 03.04. Margin */
 
     --mg-01: 1.000rem;
+    --mg-1h: 1.500rem;
     --mg-02: 2.000rem;
     --mg-03: 3.000rem;
     --mg-04: 4.000rem;
@@ -107,11 +103,12 @@
     --radius-30: 30px;
     --radius-20: 20px;
     --radius-10: 10px;
-    --radius-05: 10px;
+    /* --radius-05: 10px; */
     
     /* 06. Transition */
     
     --transition-1: 250ms ease;
     --transition-2: 500ms ease;
     --cubic-out: cubic-bezier(0.05, 0.83, 0.52, 0.97);
+
 }

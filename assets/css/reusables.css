@@ -5,17 +5,19 @@
 /* REUSABLE CSS STYLES */
 
 .container {
-    padding-inline: var(--pd-inline-container);
+    width: 100%;
+    padding-inline: 1.600rem;
+    margin-inline: auto;
 }
 
 .container__grid {
     display: grid;
-    gap: var(--gap-05);
+    gap: 5.000rem;
 }
 
 .card__wrapper_grid {
     display: grid;
-    gap: var(--gap-04);
+    gap: 4.000rem;
 }
 
 .content__grid {
@@ -44,7 +46,7 @@
     align-items: center;
     gap: var(--gap-01);
     max-width: max-content;
-    height: 40px;
+    height: 4.000rem;
     color: var(--text-white);
     padding-inline: var(--pd-03);
     border-radius: var(--radius-10);
@@ -70,7 +72,7 @@
 }
 
 .section {
-    padding-block-end: var(--section-spacing);
+    padding-block-end: 8.000rem;
 }
 
 .has__bg_image {
@@ -122,9 +124,6 @@
     text-transform: uppercase;
 }
 
-/* .section__title {
-    margin-block: 10px;
-} */
 
 .image__holder {
     aspect-ratio: var(--width) / var(--height);
