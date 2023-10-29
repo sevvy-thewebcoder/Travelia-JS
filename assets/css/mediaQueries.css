@@ -80,8 +80,8 @@
     }
 
     .btn {
-        padding-inline: var(--pd-04);
-        height: 6.000rem;
+        padding-inline: var(--pd-03);
+        height: 5.000rem;
     }
     
     /* Preloader */
@@ -189,7 +189,6 @@
         --fontSize-3: 2.800rem;
         --fontSize-4: 2.600rem;
         --fontSize-5: 2.200rem;
-        --fontSize-6: 1.800rem;
         --fontSize-7: 1.800rem;
         --fontSize-exp-item-title: 4.000rem;
     }
@@ -316,6 +315,57 @@
         max-width: 115.000rem;
     }
 
+    .header .nav__content {
+        /* background-color: #b8b8b8; */
+        grid-template-columns: max-content 1fr max-content;
+    }
+
+    .header .navbar {
+        width: max-content;
+        justify-self: center;
+        display: grid;
+    }
+
+    .navbar .nav__list_large {
+        display: grid;
+        grid-template-columns: repeat(5, max-content);
+        align-items: center;
+        gap: var(--gap-02);
+    }
+
+    .navbar .nav__list_large li {
+        position: relative;
+        width: max-content;
+        /* background-color: cadetblue; */
+        padding: var(--pd-01) var(--pd-02);
+    }
+
+    .navbar .nav__list_large .nav__link {
+       height: max-content;
+       line-height: 1;
+    }
+
+    .header .login__button_wrapper {
+        width: max-content;
+        justify-self: end;
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        align-items: center;
+        gap: var(--gap-02);
+    }
+
+    .login__button_wrapper a {
+        width: max-content;
+    }
+
+    .nav__toggle_button {
+        display: none;
+    }
+
+    .navbar__mobile {
+        display: none;
+    }
+
     /* Hero Section */
 
     .hero__desc {
@@ -399,17 +449,25 @@
 
 }
 
+/* SCREEN SIZE : ABOVE 1400px */
 
 @media screen and (min-width: 1400px) {
 
     :root {
         --fontSize-1: 7.200rem;
+        --fontSize-6: 1.800rem;
     }
 
     /* Reusables */
 
     .container {
         max-width: 135.000rem;
+    }
+
+    /* Header Section */
+
+    .header .logo img {
+        width: 100%;
     }
     
     /* Service Section */

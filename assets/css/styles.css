@@ -58,8 +58,113 @@
     100% { width: 80%; }
 }
 
+
 /* 01. HEADER */
 
+.header__wrapper {
+    position: relative;
+}
+
+.header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-block: var(--pd-01);
+    background-color: var(--bg-lavender-blush);
+}
+
+.header .nav__content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: max-content auto;
+    align-items: center;
+    gap: var(--gap-02);
+}
+
+.header .logo {
+    display: grid;
+    width: max-content;
+}
+
+.header .logo img {
+    width: 150px;
+}
+
+.header .navbar {
+    display: none;
+}
+
+.header .login__button_wrapper {
+    display: none;
+}
+
+.header .nav__toggle_button {
+    margin-inline-start: auto;
+    width: max-content;
+    font-size: var(--fontSize-4);
+}
+
+.header .nav__toggle_button:is(:hover, :focus-visible, :active) {
+    color: var(--text-majorelle-blue);
+}
+
+.navbar__mobile {
+    position: fixed;
+    width: 100%;
+    top: -100dvh;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    /* min-height: 100dvh; */
+    display: grid;
+    padding-block: var(--pd-02);
+    background-color: var(--bg-lavender-blush);
+    transition: top 500ms ease-in-out;
+}
+
+.navbar__mobile > div {
+    display: grid;
+    align-items: center;
+    gap: var(--gap-02);
+    /* background-color: aquamarine; */
+}
+
+.navbar__mobile .nav__list_mobile {
+    height: max-content;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-03);
+}
+
+.nav__list_mobile > li {
+    position: relative;
+    display: grid;
+    justify-content: center;
+}
+
+.nav__list_mobile > li.active__link::after {
+    top: 0;
+    left: -10px;
+    bottom: 0;
+    right: auto;
+    width: 4px;
+    height: 50%;
+    margin-block: auto;
+}
+
+.navbar__mobile .login__button_wrapper {
+    height: max-content;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-03);
+    align-self: self-end;
+}
 
 
 
@@ -381,6 +486,7 @@
 }
 
 .footer__link {
+    width: -moz-fit-content;
     width: fit-content;
 }
 
@@ -460,6 +566,14 @@
     width: max-content;
     color: var(--text-majorelle-blue);
     font-weight: var(--weight-medium);
+}
+
+.heart {
+    display: inline-block;
+    font-size: 2.000rem;
+    margin-inline: 1px;
+    margin-block-end: -4px;
+    color: red;
 }
 
 .footer__bottom_list {

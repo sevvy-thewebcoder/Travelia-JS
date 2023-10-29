@@ -40,6 +40,23 @@
     gap: var(--gap-01);
 }
 
+/* .active__link {
+    border-block-end: 2px solid var(--bg-majorelle-blue);
+} */
+
+.active__link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    width: 80%;
+    height: 4px;
+    border-radius: var(--radius-10);
+    background-color: var(--bg-majorelle-blue)
+}
+
 .btn {
     display: flex;
     justify-content: center;

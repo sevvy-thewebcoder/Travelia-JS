@@ -51,23 +51,127 @@
 
     <!-- 01. HEADER -->
 
-    <!-- <header class="header" data-header>
-        <div class="container">
-            <a href="/" class="logo">
-                <img src="./assets/images/logo.svg" alt="Travelia-Logo" width="187" height="38">
-            </a>
-        </div>
-    </header> -->
+    <div class="header__wrapper">
+        <header class="header" data-header>
+    
+            <div class="nav__content container">
+    
+                <a href="/" class="logo">
+                    <img src="./assets/images/logo.svg" alt="Travelia-Logo" width="187" height="38">
+                </a>
+    
+                <nav class="navbar" data-navbar>
+    
+                    <ul class="nav__list_large">
+    
+                        <li class="active__link">
+                            <a href="/" class="nav__link" >
+                                Home
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="#service" class="nav__link">
+                                Services
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="#destination" class="nav__link">
+                                Destinations
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="#experience" class="nav__link">
+                                Experience
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="#gallery" class="nav__link">
+                                Gallery
+                            </a>
+                        </li>
+    
+    
+                    </ul>
+    
+                </nav>
+    
+                <div class="login__button_wrapper">
+                    <a href="#" class="login__btn">Login</a>
+                    
+                    <a href="#" class="btn btn__primary">Sign Up</a>
+                </div>
+    
+                <button type="button" title="nav-toggler" class="nav__toggle_button" aria-label="menu" data-nav-toggler>
+                    <ion-icon name="grid-outline" aria-hidden="true"></ion-icon>
+                </button>
+            </div>
+    
+        </header>
+
+        <nav class="navbar__mobile" data-navbar-mobile>
+
+            <div class="container">
+
+                <ul class="nav__list_mobile">
+        
+                    <li class="active__link">
+                        <a href="/" class="nav__link" >
+                            Home
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#service" class="nav__link">
+                            Services
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#destination" class="nav__link">
+                            Destinations
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#experience" class="nav__link">
+                            Experience
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="#gallery" class="nav__link">
+                            Gallery
+                        </a>
+                    </li>
+    
+    
+                </ul>
+    
+                <div class="login__button_wrapper">
+                    <a href="#" class="login__btn">Login</a>
+                    
+                    <a href="#" class="btn btn__primary">Sign Up</a>
+                </div>
+
+            </div>
+
+        </nav>
+    </div>
 
     <!-- 02. MAIN CONTENT -->
 
     <main>
 
-        <article>
+        <!-- <article> -->
 
             <!-- 02.01. HERO SECTION -->
 
-            <section 
+            <section
+                id="home" 
                 class="section hero has__bg_image" 
                 aria-label="hero"
             >
@@ -141,6 +245,7 @@
             <!-- 02.02. SERVICE SECTION -->
 
             <section 
+                id="service"
                 class="section service" 
                 aria-label="service"
             >
@@ -239,6 +344,7 @@
             <!-- 02.03. DESTINATION SECTION -->
 
             <section 
+                id="destination"
                 class="section destination"
                 aria-label="destination"
             >
@@ -585,6 +691,7 @@
             <!-- 02.04. EXPERIENCE SECTION -->
 
             <section 
+                id="experience"
                 class="section experience" 
                 aria-label="experience"
             >
@@ -677,6 +784,7 @@
             <!-- 02.05. GALLERY SECTION -->
 
             <section 
+                id="gallery"
                 class="section gallery"
                 aria-label="gallery"
             >
@@ -858,7 +966,7 @@
 
             </section>
 
-        </article>
+        <!-- </article> -->
 
     </main>
 
@@ -1075,7 +1183,7 @@
                 </small>
 
                 <small class="developer">
-                    Made with love by <a href="#" class="copyright__link">SAW inc.</a>
+                    Made with <ion-icon class="heart" name="heart"></ion-icon> by <a href="#" class="copyright__link">SAW - design. code.</a>
                 </small>
 
                 <ul class="footer__bottom_list">
